@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg,#230223,#0f2d1e,#000000);
+}
+.container .navbar{
+  /* background-color: red; */
+  display: flex;
+  height: 13vh;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+
+}
+.navlist{
+  display: flex;
+  text-transform: none;
+  list-style: none;
+  gap: 2.7rem;
+}
+.navlist a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: .08rem;
+  /* margin: 1.1rem; */
+}
+button{
+  background-color: #d83928;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  padding: .9rem 1.5rem;
+  letter-spacing: .08rem;
+  border-radius: .3rem;
+  transition: .5s ease-in-out;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+button:hover{
+  background-color: #fb8b7f;
+  cursor: pointer;
+}
+.hero{
+  /* background-color: red; */
+  display: flex;
+  /* height:calc(100vh - 13vh); */
+  width: 90%;
+  align-items: center;
+  margin: auto;
+  gap: 5rem;
+}
+.Img_box{
+  height: 30rem;
+}
+h1{
+  color: white;
+  font-size: 3.5rem;
+  letter-spacing: 0.03rem;
+}
+h1 span{
+  color: #d83928;
+}
+p{
+  color: white;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1.7rem 0;
+  letter-spacing: .03rem;
+}
+.content button{
+  background-color:transparent;
+  border: .1rem solid #e96658;
+  font-size: 1.1rem;
+  color: #e96658;
+  padding: .9rem 1.5rem;
+  letter-spacing: .08rem;
+  border-radius: .3rem;
+  transition: .5s ease-in-out;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+.content button:hover{
+  letter-spacing: .19rem;
+  cursor: pointer;
+}
+.features{
+  /* background-color: aliceblue; */
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.features .card{
+  border-left: .3rem solid #e96658;
+  padding: .3rem 1rem;
+}
+.card h3{
+  color: white;
+  letter-spacing: .04rem;
+}
+.card:nth-child(1), .card:nth-child(3){
+  margin-left: 7rem;
+}
