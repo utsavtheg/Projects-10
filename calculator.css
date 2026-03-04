@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Arial',sans-serif;
+  background: lightblue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+}
+.calculator{
+  background: #2d2d2d;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  max-width: 350px;
+  width: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.display{
+  background: #1a1a1a;
+  color: white;
+  font-size: 2.5rem;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+  min-height: 80px;
+  word-wrap: break-word;
+  overflow-x: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.buttons{
+  display: grid;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.btn-hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.btn:active{
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
+.number{
+  background: #505050;
+  color: white;
+}
+.number:hover{
+  background: #606060;
+}
+.operator{
+  background: #ff9500;
+  color: white;
+}
+.operator:hover{
+  background: #ffb143;
+}
+#equals{
+  background: #4caf50;
+  color: white;
+  grid-row: span 2;
+}
+#equals:hover{
+ background: #66bb6a;
+}
+#clear{
+  background: #f44336;
+  color: white;
+  grid-column: span 2;
+  font-size: medium;
+}
+#clear:hover{
+  background: #e57373;
+}
+#decimal{
+  background:#505050;
+  color: white;
+  width: 19.5rem;
+}
+#decimal:hover{
+  background: #606060;
+}
+.zero{
+  grid-column: span 2;
+}
+.buttons{
+  /* position: relative; */
+  display: grid;
+  width: 4rem;
+  grid-template-columns: 6.5rem 6.5rem 6.5rem ;
+  grid-template-rows: 3rem ;
+  background-color:#505050;
+  color: #2d2d2d;
+
+  }
+  .op{
+    color: white;
+    background: rgba(251, 205, 119,0.9);
+    font-size: medium;
+  }
+  h1{
+    /* position: relative; */
+    text-align: center;
+    color: antiquewhite;
+    font-family:monospace;
+    
+  }
+  .calculator:hover{
+    box-shadow:0 10px 40px rgba(204, 59, 105,) ;
+  }
