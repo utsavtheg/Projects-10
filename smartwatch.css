@@ -57,7 +57,7 @@ button:hover{
 .hero{
   /* background-color: red; */
   display: flex;
-  /* height:calc(100vh - 13vh); */
+  /* height:; */
   width: 90%;
   align-items: center;
   margin: auto;
