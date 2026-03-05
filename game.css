@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root{
+  --white-clr:#fff;
+  --bg-purple:#23212e;
+  --txt-purple:#908fa5;
+  --primary-purple:#9984ee;
+  --secondary-purple:#6f4ef4;
+}
+.product-container{
+  background: var(--bg-purple);
+  min-height: 100vh;
+  padding-inline:6rem ;
+  isolation: isolate;
+}
+.navbar{
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navlist{
+  display: flex;
+  gap: 1.1rem;
+}
+.hero-section{
+ height: calc(100vh - 13vh); 
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+}
+.navbar a{
+  text-decoration: none;
+  
+}
+.navbar li{
+  list-style: none;
+}
+.img img{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.line{
+  background: var(--white-clr);
+  width: 2.5rem;
+  height: .21rem;
+  margin: .35rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.hamburger{
+  cursor: pointer;
+  display: none;
+}
+.logo{
+  font: 1.5rem;
+  color: var(--primary-purple);
+  font-weight: 700;
+}
+.logo span{
+  color: white;
+}
+a{
+  color: var(--txt-purple);
+}
+ button{
+  background: linear-gradient(45deg, var(--primary-purple),var(--secondary-purple));
+  padding: .8rem 2rem;
+  border-radius: 5rem;
+  font-size: 1rem;
+  border: none;
+  color: var(--white-clr);
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+.content{
+  max-width: 550px;
+  
+}
+.content h1{
+  font-size: 4rem;
+  background: linear-gradient(45deg, var(--white-clr),var(--primary-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content p{
+  color: var(--txt-purple);
+  font-size: 1rem;
+  margin: 1rem 0 2rem 0;
+  text-wrap: balance;
+}
+.img::before{
+  content: '';
+  background: var(--primary-purple);
+  width: 25rem;
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+  filter: blur(100px);
+  z-index: -1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -webkit-filter: blur(100px);
+}
+.img::after{
+  content: "";
+  position: absolute;
+  width: 15rem;
+  background: var(--primary-purple);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  right: 4%;
+  top: 17%;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  filter: blur(100px);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+@media screen and (max-width:680px){
+  .navlist{
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: var(--secondary-purple);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   width: 17rem;
+   z-index: 5;
+   transform: translateX(-100%);
+   transition: transform .5s ease-in-out;
+   -webkit-transform: translateX(-100%);
+   -moz-transform: translateX(-100%);
+   -ms-transform: translateX(-100%);
+   -o-transform: translateX(-100%);
+   -webkit-transition: transform .5s ease-in-out;
+   -moz-transition: transform .5s ease-in-out;
+   -ms-transition: transform .5s ease-in-out;
+   -o-transition: transform .5s ease-in-out;
+}
+.navlist-active{
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+}
+  .navbar a{
+    color: var(--white-clr);
+  }
+  .logo{
+    z-index: 6;
+  }
+  .navbar button{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  .product-container{
+    padding-inline: 2rem;
+  }
+  .hero-section{
+    flex-direction: column;
+  }
+  .content h1{
+    font-size: 3.2rem;
+  }
+  .content{
+    margin-top: 3rem;
+  }
+  .img{
+    width: 25rem;
+  }
+  .img::after{
+    width: 12rem;
+  }
+  .img::before{
+    width: 15rem;
+  }
+}
