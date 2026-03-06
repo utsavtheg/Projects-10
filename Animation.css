@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --body-bg:#573cb8;
+  --orange:#ffdd00;
+  --pink:#fc0fc0;
+  --green:#73c8a9;
+  --red:#ed213a;
+  --purple:#573cb8;
+  --black:#0f0c10;
+  --white:#ffff;
+
+
+}
+.container{
+  background-image: radial-gradient(at top, var(--body-bg) 10%,var(--black) 50%);
+  width: 100%;
+  min-height: 100vh;
+}
+.navbar{
+  /* background-color: #ffdd00; */
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  margin-inline: 4rem;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 2.5rem;
+  color: var(--white);
+  font-weight: bolder;
+}
+.hamburger .line{
+  height: .1rem;
+  width: 2rem;
+  background:var(--white);
+  margin: .6rem;
+}
+.logo span{
+  color: var(--purple);
+}
+.hamburger{
+  cursor: pointer;
+}
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.content h1{
+  color: var(--white);
+  position: absolute;
+  top: 45%;
+  letter-spacing: 0.05rem;
+  font-size: 5rem;
+  font-family: sans-serif;
+
+}
+
+.content p{
+  position: absolute;
+  top: 60%;
+  color: var(--white);
+  text-wrap: wrap;
+  max-width: 30rem;
+  line-height: 1.7rem;
+}
+.content span{
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.colors{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  left: 6%;
+  top: 45%;
+
+  
+}
+input[type="radio"]{
+  width: 1rem;
+  height: 1rem;
+  outline: 3px solid var(--radio-color);
+  appearance: none;
+  border-radius: 50%;
+  outline-offset: 3px;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+input[type="radio"]#purple{
+  --radio-color:var(--purple);
+
+}
+input[type="radio"]#orange{
+  --radio-color:var(--orange);
+
+}
+input[type="radio"]#pink{
+  --radio-color:var(--pink);
+
+}
+input[type="radio"]#green{
+  --radio-color:var(--green);
+
+}
+input[type="radio"]#red{
+  --radio-color:var(--red);
+
+}
+input[type="radio"]:checked{
+  background-color: var(--radio-color);
+}
+:root:has(#red:checked){
+  --body-bg: var(--red);
+}
+/* :root:has(#purple:checked){
+  --body-bg: var(--purple);
+} */
+:root:has(#pink:checked){
+  --body-bg: var(--pink);
+}
+:root:has(#orange:checked){
+  --body-bg: var(--orange);
+}
+:root:has(#green:checked){
+  --body-bg: var(--green);
+}
