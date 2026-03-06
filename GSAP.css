@@ -1,0 +1,29 @@
+@font-face{
+  font-family: Melodrama;
+  src:url("Projects-10/Melodrama-Semibold.woff");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Melodrama;
+}
+body{
+  background-color: black;
+  color: white;
+}
+.section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading{
+  font-size: 8vw;
+  text-transform: uppercase;
+}
+.para{
+  font-size: 3.3vw;
+  width: 960px;
+}
