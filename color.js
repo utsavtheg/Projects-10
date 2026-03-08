@@ -46,11 +46,4 @@ generateBtn.addEventListener("click", generatePalette);
 generatePalette();
 
 
-
-
-
-
-
-
-
-
+ 
