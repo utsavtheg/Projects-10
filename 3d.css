@@ -93,10 +93,3 @@ li{
 .link{
  font-size: .9rem; 
 }
-spline-viewer{
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  scale: 1.2;
-}
-

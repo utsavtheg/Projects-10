@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+body{
+    /* overflow: hidden; */
+    background-color: black;
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+spline-viewer{
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  scale: 1.2;
+}
+h1{
+  color: white;
+  letter-spacing: .09rem;
+  margin: 1.4rem;
+  font-size: 4rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+p{
+  color: white;
+  opacity: 0.8;
+}
+main{
+  background:gold;
+  height: 100vh;
+  padding-inline: 7rem;
+}
+nav{
+  display: flex;
+  z-index: 3;
+  position: fixed;
+  align-items: center;
+  height: 13vh;
+  
+}
+.navlist{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+  gap:15rem;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+  opacity: .9;
+}
+#map{
+  font-size: 2.5rem;
+  color: white;
+}
+#search{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#play{
+  color: white;
+  font-size: 2.5rem;
+  margin: 3rem;
+}
+h2{
+  color: white;
+}
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  height: 40vh;
+  gap: 10px;
+}
+.box{
+  background-color: yellow;
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.box h4{
+  position: absolute;
+  bottom: 1rem;
+
+}
