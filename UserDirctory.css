@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: #F0F0F0;
+}
+.container{
+  width: 100%;
+  background-color: white;
+  max-width: 35rem;
+  margin:50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.219);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#searchInput{
+  padding: 20px 10px;
+  width: 100%  ;
+  border: 1px solid black;
+
+}
+.userContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+  
+}
+.userContainer .userItem{  
+  display:flex;
+  background-color: #faf8f8;
+  width: 100%;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+  margin: 2px;
+}
+.userContainer .userItem img{
+ width: 40px;
+ height: 40px;
+ object-fit: contain;
+ object-position: center;
+ border-radius: 150px;
+ border:1.5px solid black;
+ zoom: 220%;
+ overflow: hidden;
+ -webkit-border-radius: 150px;
+ -moz-border-radius: 150px;
+ -ms-border-radius: 150px;
+ -o-border-radius: 150px;
+}
+.userItem h3{
+  white-space: nowrap;
+  width: 100%;
+  
+}
+.info{
+  padding:  0px 40px;
+ 
+}
+
+.userItem:hover{
+  transform: scale(1.5);
+  transition: 0.3s;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
