@@ -1,53 +1,52 @@
 :root{
-  /* bg colors */
-  --bg-primary-color:rgb(17,17,17);
-  --bg-secondary-color:rgb(34,34,34);
-  --bg-active-color:rgb(233,233,233);
-  --bg-danger-color:rgb(200,50,50);
-  --bg-success-color:rgb(50,190,50);
+  --header-height: 3.5rem;
 
-  /* text colors */
-  --text-primary-color: rgb(255,255,255);
-  --text-secondary-color: rgb(200,200,200);
-  --text-tertiary-color: rgb(150,150,150);
-  --text-active-color: rgb(24,24,24);
+  /* Colors */
+  --first-color: hsl(28,95%,60%);
+  --first-color-alt:hsl(28, 95%,56%);
+  --beige-color: hsl(40, 45%, 86%);
+  --beige-color-light: hsl(40,45%,94%);
+  --beige-color-alt: hsl(40, 35%, 72%);
+  --brown-color: hsl(18,15%,24%);
+  --title-color:hsl(0,0%,6%);
+  --text-color: hsl(0,0%,40%);
+  --white-color: hsl(0,0%,100%);
+  --container-color: hsl(0,0%,85%);
+  --border-color: hsl(0,0%,85%);
 
-  /* paddings */
-  --padding-sm:0.5rem;
-  --padding-md:1rem;
-  --padding-lg:1.5rem;
-  --padding-xl:2rem;
-  --padding-2xl:3rem;
-  --toggle-x:10px;
- 
-  /* margin */
-  --margin-sm:0.5rem;
-  --margin-md:1rem;
-  --margin-lg:1.5rem;
-  --margin-xl:2rem;
-  --margin-2xl:3rem;
-  
-  /* gutter */
-  --gutter-sm:0.5rem;
-  --gutter-md:1rem;
-  --gutter-lg:1.5rem;
-  --gutter-xl:2rem;
-  --gutter-2xl:3rem;
+  /*font and typography  */
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Chakra Petch",sans-serif;
+  --biggest-font-size: 1.875rem;
+  --big-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
 
+  /* font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 
-  /* font sizes */
-  --font-size-sm:0.875rem;
-  --font-size-md:1rem;
-  --font-size-lg:1.125rem;
-  --font-size-xl:1.25rem;
-  --font-size-2xl:1.5rem;
+  /* z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
 
-  /* border-radius */
-  --border-radius-sm:0.2rem;
-  --border-radius-md:0.25rem;
-  --border-radius-lg:0.3rem;
-  --border-radius-xl:0.4rem;
-  --border-radius-2xl:0.5rem;
-
-
+  /* Responsive typography */
+  @media screen and(width >= 1150px){
+    :root{
+      --biggest-font-size:4rem ;
+      --big-font-size: 3rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size:1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+  }
 }
